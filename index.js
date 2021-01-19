@@ -633,7 +633,7 @@ class instance extends instance_skel {
 				type: 'checkbox',
 				id: 'storeWithoutSpeed',
 				label: 'Store presets without setting any speed. Useful for older models/firmware not supporting it.',
-				width: 2,
+				width: 4,
 				default: false
 			},
 		]
