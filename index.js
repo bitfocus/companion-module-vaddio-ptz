@@ -534,7 +534,13 @@ class instance extends instance_skel {
 				break;
 
 			case 'savePset':
-				cmd = 'camera preset store ' + opt.val + ' ' + opt.speed + (opt.ccu === true ? ' save-ccu' : '');
+				cmd = 'camera preset store ' + opt.val;
+				if (!this.config.storeWithoutSpeed) {
+					cmd += ' ' + opt.speed;
+				}
+				if (opt.ccu === true) {
+					cmd += ' save-ccu';
+				}
 				this.sendCommand(cmd);
 				break;
 			case 'recallPset':
@@ -622,7 +628,14 @@ class instance extends instance_skel {
 				max: 999,
 				default: 5,
 				required: true
-			}
+			},
+			{
+				type: 'checkbox',
+				id: 'storeWithoutSpeed',
+				label: 'Store presets without setting any speed. Useful for older models/firmware not supporting it.',
+				width: 4,
+				default: false
+			},
 		]
 	}
 
