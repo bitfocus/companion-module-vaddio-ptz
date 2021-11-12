@@ -1,5 +1,4 @@
 module.exports = {
-
 	/**
 	 * INTERNAL: Get the available feedbacks.
 	 *
@@ -8,7 +7,7 @@ module.exports = {
 	 * @since 1.0.0
 	 */
 	getFeedbacks() {
-		var feedbacks = {};
+		var feedbacks = {}
 
 		feedbacks['standby'] = {
 			label: 'Change background color by camera standby state',
@@ -18,31 +17,31 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.standby == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['auto_focus'] = {
 			label: 'Change background color by auto focus state',
@@ -52,31 +51,31 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.auto_focus == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['auto_iris'] = {
 			label: 'Change background color by auto iris state',
@@ -86,31 +85,31 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.auto_iris == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['auto_white_balance'] = {
 			label: 'Change background color by auto white balance state',
@@ -120,31 +119,31 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.auto_white_balance == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['backlight_compensation'] = {
 			label: 'Change background color by backlight compensation state',
@@ -154,31 +153,31 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.backlight_compensation == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['led'] = {
 			label: 'Change background color by LED state',
@@ -188,31 +187,31 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.led == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['mute'] = {
 			label: 'Change background color by video mute state',
@@ -222,31 +221,31 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.mute == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['pt_speed'] = {
 			label: 'Change background color by pan & tilt speed',
@@ -256,13 +255,13 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'number',
@@ -272,7 +271,7 @@ module.exports = {
 					max: 24,
 					default: 12,
 					required: true,
-					range: true
+					range: true,
 				},
 				{
 					type: 'number',
@@ -282,18 +281,18 @@ module.exports = {
 					max: 20,
 					default: 10,
 					required: true,
-					range: true
-				}
+					range: true,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.panSpeed == feedback.options.panSpeed && this.tiltSpeed == feedback.options.tiltSpeed) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
 		feedbacks['wide_dynamic_range'] = {
 			label: 'Change background color by wide dynamic range state',
@@ -303,32 +302,32 @@ module.exports = {
 					type: 'colorpicker',
 					label: 'Foreground color',
 					id: 'fg',
-					default: this.rgb(0,0,0)
+					default: this.rgb(0, 0, 0),
 				},
 				{
 					type: 'colorpicker',
 					label: 'Background color',
 					id: 'bg',
-					default: this.rgb(255,255,0)
+					default: this.rgb(255, 255, 0),
 				},
 				{
 					type: 'dropdown',
 					label: 'State',
 					id: 'mode',
 					default: '0',
-					choices: this.CHOICES_ONOFF
-				}
+					choices: this.CHOICES_ONOFF,
+				},
 			],
 			callback: (feedback, bank) => {
 				if (this.state.wide_dynamic_range == feedback.options.mode) {
 					return {
 						color: feedback.options.fg,
-						bgcolor: feedback.options.bg
-					};
+						bgcolor: feedback.options.bg,
+					}
 				}
-			}
-		};
+			},
+		}
 
-		return feedbacks;
-	}
+		return feedbacks
+	},
 }
