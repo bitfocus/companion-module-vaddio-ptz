@@ -3,7 +3,7 @@
 	"name": "vaddio-ptz",
 	"shortname": "vaddio-ptz",
 	"description": "Controls Vaddio PTZ cameras",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-vaddio-ptz.git",
 	"bugs": "https://github.com/bitfocus/companion-module-vaddio-ptz/issues",

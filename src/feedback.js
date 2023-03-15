@@ -14,7 +14,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by camera standby state',
 		description: 'If the camera standby state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -32,7 +32,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by auto focus state',
 		description: 'If the auto focus state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -50,7 +50,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by auto iris state',
 		description: 'If the auto iris state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -68,7 +68,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by auto white balance state',
 		description: 'If the auto white balance state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -86,7 +86,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by backlight compensation state',
 		description: 'If the backlight compensation state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -104,7 +104,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by LED state',
 		description: 'If the front LED state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -122,7 +122,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by video mute state',
 		description: 'If the video mute state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -140,7 +140,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by pan & tilt speed',
 		description: 'If the the pan and tilt speeds selected are action, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
@@ -179,7 +179,7 @@ export function updateFeedbacks() {
 		type: 'boolean',
 		name: 'Change style by wide dynamic range state',
 		description: 'If the wide dynamic range state specified is active, change the style of the bank',
-		style: {
+		defaultStyle: {
 			color: combineRgb(0, 0, 0),
 			bgcolor: combineRgb(255, 255, 0),
 		},
