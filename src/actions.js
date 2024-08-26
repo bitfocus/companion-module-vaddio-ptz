@@ -488,7 +488,7 @@ export function updateActions() {
 			name: 'Save Preset',
 			options: [Fields.Preset, Fields.Speed(1, 24, 1), Fields.IncludeCcu],
 			callback: ({ options }) => {
-				cmd = 'camera preset store ' + options.val
+				let cmd = 'camera preset store ' + options.val
 				if (!this.config.storeWithoutSpeed) {
 					cmd += ' ' + options.speed
 				}
@@ -516,10 +516,10 @@ export function updateActions() {
 			name: 'Recall CCU Preset',
 			options: [Fields.CcuPresetRecall],
 			callback: ({ options }) => {
-				cmd =
+				let cmd =
 					'camera ccu scene recall ' +
-					(options.preset.substring(0, 1) == 'C' ? 'custom ' : 'factory ') +
-					options.preset.substring(1, 2)
+					(options.preset?.substring(0, 1) == 'C' ? 'custom ' : 'factory ') +
+					options.preset?.substring(1, 2)
 				this.sendCommand(cmd)
 				this.sendCommand('camera ccu get all')
 			},

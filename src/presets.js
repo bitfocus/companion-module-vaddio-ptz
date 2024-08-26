@@ -113,7 +113,7 @@ export function updatePresets() {
 						{
 							actionId: 'recallCCU',
 							options: {
-								speed: Choices.CcuScenesR[type].id,
+								preset: Choices.CcuScenesR[type].id,
 							},
 						},
 					],
@@ -141,7 +141,7 @@ export function updatePresets() {
 						{
 							actionId: 'saveCCU',
 							options: {
-								speed: Choices.CcuScenesS[type].id,
+								preset: Choices.CcuScenesS[type].id,
 							},
 						},
 					],
